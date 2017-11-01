@@ -1,0 +1,167 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+html,body,#lottery-back{
+	margin:0;
+	padding:0;
+	height:100vh;
+	width:100vw;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/***
+ * 背景
+ */
+#lottery-back{
+	position:relative;
+	background:url('../images/background.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+}
+
+/***
+ * 奖品内容和中奖号码公用样式
+ */
+#award-content,#win-content{
+	position:absolute;
+	height:45vh;
+	top:25vh;
+	border-radius:8px;
+	background-color:#fff;
+}
+
+/***
+ * 奖品内容页
+ */
+#award-content{
+	width:22.93vw;
+	left:13.88vw;
+}
+
+.award-head{
+	display:block;
+	font-size:20px;
+	color:#515151;
+	margin-top:6.75vh;
+	margin-left:1.95vw;
+}
+
+.award-list{
+	height:20vh;
+	width:19.19vw;
+	border:1px solid #ccc;
+	background-color:#e6e6e6;
+	margin-top:3vh;
+	margin-left:1.95vw;
+}
+
+.award-event{
+	font-size:14px;
+	color:#fe8f2a;
+	margin-top:1.75vh;
+	margin-left:1.95vw;
+	cursor:pointer;
+}
+
+/***
+ * 中奖号码内容
+ */
+#win-content{
+	width:47.11vw;
+	right:13.88vw;
+}
+
+.win-head{
+	display:block;
+	font-size:30px;
+	color:#fe8f2a;
+	margin-top:6.5vh;
+	margin-left:5vw;
+}
+
+.code-container{
+	height:5vh;
+	line-height:5vh;
+	margin-top:2.25vh;
+	margin-left:5vw;
+}
+
+.win-code{
+	display:inline-block;
+	width:25.74vw;
+	padding:5px 0;
+	padding-left:1vw;
+	font-size:30px;
+	background-color:#e6e6e6;
+	color:#4c4c4c;
+	border-radius:2px;
+}
+
+.win-button{
+	display:inline-block;
+	width:9.36vw;
+	height:5vh;
+	line-height:5vh;
+	margin-left:1.87vw;
+	border:0;
+	font-size:16px;
+	color:#fff;
+	border-radius: 2px;
+	cursor:pointer;
+	background: -webkit-linear-gradient(left, #f67e3d , #fcab38); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #f67e3d, #fcab38); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #f67e3d, #fcab38); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #f67e3d , #fcab38);/*标准语法*/
+}
+
+.win-time{
+	display:block;
+	margin-top:1.75vh;
+	margin-left:5vw;
+	font-size:16px;
+	color:#515151;
+}
+
+.win-import-div{
+	position:relative;
+	margin-top:4.25vh;
+	margin-left:5vw;
+}
+
+#xlf{
+	position:absolute;
+	width:6.24vw;
+	opacity:0;
+}
+
+.win-import-button{
+	width:6.24vw;
+	height:2.75vh;
+	border-radius:2px;
+	border:1px solid #35bf8d;
+	background-color:#fff;
+	color:#35bf8d;
+	cursor:pointer;
+}
+
+/***
+ * 奖池记录
+ */
+.win-pre-first,.win-pre-end,.win-pre-count{
+	margin-left:5vw;
+	font-size:14px;
+	color:#515151;
+}
+
+.win-pre-end{
+	
+}
+
+.win-pre-count{
+	
+}

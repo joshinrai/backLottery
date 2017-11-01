@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  #lottery-back
+    #award-content
+      span.award-head 本期抽奖奖品为：
+      .award-list IPHONE X
+      .award-event 点击修改本次产品
+    #win-content
+      span.win-head 本次中奖号码为：
+      .code-container
+        span.win-code 123456789123
+        button.win-button(action='start') 开始抽奖
+      span.win-time 北京时间：2017年10月31日 11:49:00
+      .win-import-div
+        input#xlf(type='file',name='xlfile')
+        button.win-import-button 导入奖池
+      pre.win-pre-first 目前奖池第一条记录为：123456789123
+      pre.win-pre-end 最后一条记录为 123456789123
+      pre.win-pre-count 奖池共40000条记录
+  script(src='../javascripts/jquery.min.js')
+  script(src='../javascripts/ga.js')
+  script(src='../javascripts/shim.js')
+  script(src='../javascripts/xlsx.full.min.js')
+  script(src='../javascripts/draw.js')
